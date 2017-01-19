@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div id="root" class="container">
+			<div class="m-artical-action">
+				<div class="artical-action-mid" id="action-mid"></div>
+			</div>
+			<div id="top-nav" class="top-nav" style="display: none;">
+				<div class="icon-back"></div>
+				<div class="nav-title">返回书架</div>
+			</div>
+			<div id="bottom-nav" class="bottom-nav" style="display: none;">
+				<div class="item menu-button" id="menu-button">
+					<div class="item-warp">
+						<div class="icon-menu"></div>
+						<div class="icon-text">目录</div>
+					</div>
+				</div>
+				<div class="item" id="font-button">
+					<div class="item-warp">
+						<div class="icon-ft" id="icon-ft"></div>
+						<div class="icon-text">字体</div>
+					</div>
+				</div>
+				<div class="item" id="night-button">
+					<div class="item-warp" id="day-icon" style="display: none;">
+						<div class="icon-day"></div>
+						<div class="icon-text">白天</div>
+					</div>
+					<div class="item-warp"  id="night-icon" >
+						<div class="icon-night"></div>
+						<div class="icon-text">夜间</div>
+					</div>
+				</div>
+			</div>
+		    <div id="fition_chapter_title"></div>
+		    <div id="main_face" >
+		    	<div id="fiction_contsiner" class="m-read-content">
+
+
+
+		    	</div>
+		    	<div class="m-button-bar" id="m-button-bar1">
+		        	<ul class="u-tab">
+		            	<li id="prev_button">上一章</li>
+		            	<li id="next_button">下一章</li>
+		        	</ul>
+		    	</div>
+		    </div>
+		    <div class="nav-pannel" id="font-container" >
+		    	<div class="child-mod">
+		    		<span>字号</span>
+		    		<button id="large-font" class="font-size-button">大</button>
+		    		<button id="small-font" class="font-size-button">小</button>
+		    	</div>
+		    	<div class="child-mod">
+		    		<span>背景</span>
+		    		<div class="bk-container" >
+		    			<div class="bk-container-current" id="mibai" ></div>
+		    			<span>米白</span>
+		    		</div>
+		    		<div class="bk-container">
+		    			<div class="bk-container-current" id="zhizhang" style="background: #e9dfc7;"></div>
+		    			<span>纸张</span>
+		    		</div>
+		    		<div class="bk-container">
+		    			<div class="bk-container-current" id="qianhui" style="background: #a4a4a4;"></div>
+		    			<span>浅灰</span>
+		    		</div>
+		    		<div class="bk-container">
+		    			<div class="bk-container-current" id="huyan" style="background: #cdefce;"></div>
+		    			<span>护眼</span>
+		    		</div>
+		    		<div class="bk-container">
+		    			<div class="bk-container-current" id="huilan" style="background: #283548;"></div>
+		    			<span>灰蓝</span>
+		    		</div>
+		    		<div class="bk-container">
+		    			<div class="bk-container-current" id="yejian" style="background: #0f1410;"></div>
+		    			<span>夜间</span>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+		<script src="lib/zepto.min.js"></script>
+		<script>
+			window.jQuery = $;
+		</script>
+		<script src="js/jquery.base64.js"></script>
+		<script src="js/jquery.jsonp.js"></script>
+
+		<script src="js/readAction.js"> </script>
+
+
+	</body>
+</html>
